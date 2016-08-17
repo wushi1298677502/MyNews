@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+    <TextView
+        android:id="@+id/picitem_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="title"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/picitem_img"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:src="@drawable/bz1"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

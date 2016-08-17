@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.scxh.myxlistview.MyActivity.PicActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pic_ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/red1"
+
+        app:title="今日新闻"
+        app:titleTextColor="@color/blue"
+        app:navigationIcon="@drawable/ic_action_back"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic_ToolBar"
+        android:padding="10dp">
+        <ProgressBar
+            android:id="@+id/pic_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/myfragment_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</RelativeLayout>

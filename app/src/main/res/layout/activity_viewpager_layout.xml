@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/myXlistview_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.scxh.slider.library.SliderLayout
+        android:id="@+id/mysliderlayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:auto_cycle="false"
+        app:indicator_visibility="visible"/>
+    </RelativeLayout>
+</RelativeLayout>

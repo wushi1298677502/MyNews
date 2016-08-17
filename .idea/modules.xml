@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyXListView.iml" filepath="$PROJECT_DIR$/MyXListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-imageslider-viktor-library/android-imageslider-viktor-library.iml" filepath="$PROJECT_DIR$/android-imageslider-viktor-library/android-imageslider-viktor-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-slidingmenu-library/android-slidingmenu-library.iml" filepath="$PROJECT_DIR$/android-slidingmenu-library/android-slidingmenu-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xlistviewlibary/xlistviewlibary.iml" filepath="$PROJECT_DIR$/xlistviewlibary/xlistviewlibary.iml" />
+    </modules>
+  </component>
+</project>
