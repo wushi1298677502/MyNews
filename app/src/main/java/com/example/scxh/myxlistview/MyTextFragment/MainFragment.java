@@ -72,6 +72,7 @@ public class MainFragment extends Fragment implements XListView.IXListViewListen
     private static final int PAGE_SIZE = 20; //每页数据个数
     public static final String CHACH_NAME = "com.example.scxh.myxlistview.MyTextFragment.MainFragment";
     public static final String CHACH_ENTERTAINMENT_NAME = "com.example.scxh.myxlistview.MyTextFragment.EntertainmentFragment";
+    public static final String CHACH_SPORTS_NAME = "com.example.scxh.myxlistview.MyTextFragment.SportsFragment";
     int pageNo = 0; //页号 ，表示第几页,第一页从0开始
     int nums;
     int pageSize = 20; //页大小，显示每页多少条数据
@@ -158,8 +159,10 @@ public class MainFragment extends Fragment implements XListView.IXListViewListen
             if(nums == 0){
                 cacheContent = mContext.getSharedPreferences(CHACH_NAME,Context.MODE_PRIVATE).getString(baseUrl,null);
 
-            }else {
+            }else if(nums == 1) {
                 cacheContent = mContext.getSharedPreferences(CHACH_ENTERTAINMENT_NAME,Context.MODE_PRIVATE).getString(baseUrl,null);
+            }else {
+                cacheContent = mContext.getSharedPreferences(CHACH_SPORTS_NAME,Context.MODE_PRIVATE).getString(baseUrl,null);
             }
         if (cacheContent != null){
             setViewpage(cacheContent);
@@ -220,6 +223,9 @@ public class MainFragment extends Fragment implements XListView.IXListViewListen
                     }else if(news_type_id.contains("T1348648517839")){
                         Logs.e("getDatalists>>>>T1348648517839");
                         mContext.getSharedPreferences(CHACH_ENTERTAINMENT_NAME,Context.MODE_PRIVATE).edit().putString(baseUrl,cont).commit();
+                    }else if(news_type_id.contains("T1348649079062")){
+                        Logs.e("getDatalists>>>>T1348649079062");
+                        mContext.getSharedPreferences(CHACH_SPORTS_NAME,Context.MODE_PRIVATE).edit().putString(baseUrl,cont).commit();
                     }else {}
                 }
                 setViewpage(cont);
